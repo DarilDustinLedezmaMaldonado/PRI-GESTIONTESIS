@@ -1,0 +1,22 @@
+.body_Observation{
+    border-radius: 15px;
+} 
+.card{
+    padding: 20px;
+}
+.btn{
+    width: 200px;
+}
+.status_box{
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 3px;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+}
+.sup_obs{
+    display: flex;
+    flex-direction: row;
+
+}

@@ -1,0 +1,116 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #E6E6E6;
+}
+
+:root {
+    --main-radius: 15px;
+    --main-padding: 15px;
+}
+
+.container_grid {
+    display: grid;
+    height: 100vh;
+    padding: 10px 10px 10px 10px ;
+    background-color: #E6E6E6;
+    grid-template-columns: 0.5fr 3fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    grid-template-areas:
+        "sidebar nav "
+        "sidebar content1"
+        "sidebar content1";
+    grid-gap: 1rem;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+
+nav {
+    background: #860842;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar {
+    background: #860842;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+}
+.buttons{
+    align-items:end;
+}
+
+#content1 {
+    background: #ffffff;
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding: 20px;
+}
+
+.img_logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 90%; /* Ajustar el logo al ancho de la sidebar */
+    border-radius: 15px;
+}
+
+.top-buttons a, .bottom-buttons a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.top-buttons a:hover, .bottom-buttons a:hover {
+    background-color: #97094b;
+}
+
+.top-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.bottom-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px; /* Espacio opcional si deseas separar los enlaces de abajo */
+}
+.icon {
+    width: 20px; /* Ajusta el tamaño del icono */
+    height: 20px; /* Ajusta el tamaño del icono */
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+@media only screen and (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+            "sidebar"
+            "nav"
+            "content1";
+    }
+}
+
+.image-button {
+    align-items: left;
+    background: none;
+    /* Elimina el fondo predeterminado del botón */
+    border: none;
+    /* Elimina el borde predeterminado del botón */
+    padding: 0;
+    /* Elimina el padding del botón */
+    cursor: pointer;
+    /* Cambia el cursor para indicar que es interactivo */
+}
+
+.img-btn {
+    width: 30px;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
