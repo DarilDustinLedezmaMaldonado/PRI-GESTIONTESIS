@@ -1,5 +1,5 @@
 body {
-    font-family: "Inter", sans-serif;
+    
     background-color: #E6E6E6;
 }
 
@@ -9,6 +9,7 @@ body {
 }
 
 .container_grid {
+    font-family: 'Arial', sans-serif;
     display: grid;
     height: 100vh;
     padding: 10px 10px 10px 10px ;

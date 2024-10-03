@@ -1,0 +1,89 @@
+﻿@model IEnumerable<GAAP_2024.Models.Project>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectModality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectTittle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectGeneralObjetive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectSpecificObjectives)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectScope)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectQueryDocument)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProjectReviewsNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RegisterDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdateDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectModality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectTittle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectGeneralObjetive)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectSpecificObjectives)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectScope)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectQueryDocument)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProjectReviewsNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegisterDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
