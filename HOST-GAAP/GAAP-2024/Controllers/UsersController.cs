@@ -21,6 +21,12 @@ namespace GAAP_2024.Controllers
             _userService = userService;
             _context = context;
         }
+        //Para obtener todos los usuarios sin necesidad de especificar id del proyecto
+        [HttpGet("GetAllUsers")]
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        {
+            return await _context.Users.Where(x => x.Status == 1).ToListAsync();
+        }
 
         [HttpGet("ByRole/{roleId}")]
         public async Task<ActionResult<List<User>>> GetUsersByRole(int roleId)

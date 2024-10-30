@@ -278,7 +278,7 @@
   {
     "ContainingType": "GAAP_2024.Controllers.ProjectsController",
     "Method": "DeleteProject",
-    "RelativePath": "api/Projects/DeketeProjectByID{id}",
+    "RelativePath": "api/Projects/DeleteProjectByID/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -475,6 +475,46 @@
   },
   {
     "ContainingType": "GAAP_2024.Controllers.SubstagesController",
+    "Method": "GetStages",
+    "RelativePath": "api/Substages/GetAllStages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GAAP_2024.Models.Stage, GAAP-2024, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GAAP_2024.Controllers.SubstagesController",
+    "Method": "GetSubstages",
+    "RelativePath": "api/Substages/GetAllSubstages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GAAP_2024.Models.Substage, GAAP-2024, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GAAP_2024.Controllers.SubstagesController",
     "Method": "BackSubStage",
     "RelativePath": "api/Substages/RegresarSubstage{stageId}",
     "HttpMethod": "PATCH",
@@ -589,6 +629,26 @@
     "ReturnTypes": [
       {
         "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GAAP_2024.Controllers.UsersController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Users/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GAAP_2024.Models.User, GAAP-2024, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

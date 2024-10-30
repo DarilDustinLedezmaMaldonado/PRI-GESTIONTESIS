@@ -226,7 +226,7 @@ namespace GAAP_2024.Controllers
         }
 
         // DELETE: api/Projects/5
-        [HttpDelete("DeketeProjectByID{id}")]
+        [HttpDelete("DeleteProjectByID/{id}")]
         public async Task<IActionResult> DeleteProject(string id)
         {
             try

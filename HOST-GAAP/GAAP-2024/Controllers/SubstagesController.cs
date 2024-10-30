@@ -21,6 +21,18 @@ namespace GAAP_2024.Controllers
             _context = context;
         }
 
+        //Para obtener las etapas
+        [HttpGet("GetAllStages")]
+        public async Task<ActionResult<IEnumerable<Stage>>> GetStages()
+        {
+            return await _context.Stages.Where(x => x.Status == 1).ToListAsync();
+        }
+        // Para obtener todas las subetapas
+        [HttpGet("GetAllSubstages")]
+        public async Task<ActionResult<IEnumerable<Substage>>> GetSubstages()
+        {
+            return await _context.Substages.Where(x => x.Status == 1).ToListAsync();
+        }
         // PUT: api/Substages/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
 
