@@ -1,0 +1,6 @@
+@GAAP_2024_HostAddress = http://localhost:5079
+
+GET {{GAAP_2024_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

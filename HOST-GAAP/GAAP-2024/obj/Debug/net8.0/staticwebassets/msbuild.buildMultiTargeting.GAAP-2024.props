@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\GAAP-2024.props" />
+</Project>
