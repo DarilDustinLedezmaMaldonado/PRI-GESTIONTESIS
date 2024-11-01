@@ -17,12 +17,17 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GAAP_2024
 build_property.RootNamespace = GAAP_2024
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\danie\Documents\Proyects\PRI-GESTIONTESIS\HOST-GAAP\GAAP-2024\
+=======
+build_property.ProjectDir = C:\Users\lianl\OneDrive\Documentos\Proyectos\PRI-GESTIONTESIS\HOST-GAAP\GAAP-2024\
+>>>>>>> LianBranch
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\danie\Documents\Proyects\PRI-GESTIONTESIS\HOST-GAAP\GAAP-2024
 build_property._RazorSourceGeneratorDebug = 
 
@@ -47,5 +52,31 @@ build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/danie/Documents/Proyects/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Shared/_ValidationScriptsPartial.cshtml]
+=======
+build_property.MSBuildProjectDirectory = C:\Users\lianl\OneDrive\Documentos\Proyectos\PRI-GESTIONTESIS\HOST-GAAP\GAAP-2024
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lianl/OneDrive/Documentos/Proyectos/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Projects/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lianl/OneDrive/Documentos/Proyectos/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Projects/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lianl/OneDrive/Documentos/Proyectos/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Projects/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lianl/OneDrive/Documentos/Proyectos/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Projects/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lianl/OneDrive/Documentos/Proyectos/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Projects/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvamVjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lianl/OneDrive/Documentos/Proyectos/PRI-GESTIONTESIS/HOST-GAAP/GAAP-2024/Views/Shared/_ValidationScriptsPartial.cshtml]
+>>>>>>> LianBranch
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

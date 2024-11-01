@@ -1,0 +1,90 @@
+.NewUser {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-panel,
+.right-panel {
+  width: 48%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+}
+
+td {
+  background-color: #ddd;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+select {
+  width: 100%; /* Asegura que el select también tenga el mismo ancho */
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+  box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+button {
+  background-color: #8b0032;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #a3003d;
+}
+
+.add-button {
+  background-color: #8b0032;
+}
+
+.edit-button {
+  background-color: #8b0032;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
