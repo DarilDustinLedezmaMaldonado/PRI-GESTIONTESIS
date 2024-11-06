@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Layout = ({ children }) => {
+  
   return (
     <div className="container_grid">
       <nav>
@@ -18,15 +19,19 @@ const Layout = ({ children }) => {
         <img src={`${process.env.PUBLIC_URL}/ProjectGAAP.png`} alt="Imagen Logo" className="img_logo" />
         <div className="buttons">
           <div className="top-buttons">
-            <a href="#">
+            <a href="/homestudent">
               <img src={`${process.env.PUBLIC_URL}/home.png`} alt="Inicio Icon" className="icon" /> Inicio
             </a>
-            <a href="#">
+            <a href="/jurados">
               <img src={`${process.env.PUBLIC_URL}/progreso.png`} alt="Revisión Icon" className="icon" /> Revisión
             </a>
-            <a href="#">
+            <a href="/project-list">
               <img src={`${process.env.PUBLIC_URL}/revision.png`} alt="Proyectos Icon" className="icon" /> Proyectos
             </a>
+            <a href="/newUser">
+              <img src={`${process.env.PUBLIC_URL}/revision.png`} alt="Proyectos Icon" className="icon" /> Añadir Usuarios
+            </a>
+            
           </div>
           <div className="bottom-buttons">
             <a href="#">

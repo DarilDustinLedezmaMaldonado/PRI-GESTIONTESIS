@@ -83,7 +83,7 @@ function ProjectCreation() {
 
   return (
     <Layout>
-      <div className="container mt-5">
+      <div className="table-container_2">
         <h2>Editar Proyecto</h2>
         <form>
           <div className="row mb-3">

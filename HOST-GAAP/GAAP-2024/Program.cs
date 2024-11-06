@@ -1,5 +1,6 @@
 using GAAP_2024.Data;
 using GAAP_2024.Services;
+using GAAP_2024.Servicio;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -10,6 +11,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<Gaap2024Context>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllers();
+
+builder.Services.AddScoped<ProjectService>();
 
 // Add CORS
 builder.Services.AddCors(options =>

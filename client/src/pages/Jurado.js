@@ -82,7 +82,7 @@ function Jurado() {
 
   return (
     <Layout> 
-      <div className="container mt-5">
+      <div>
         <h2 className="text-center mt-4">Lista de Revisión/Proyectos</h2>
         <form className="mb-3">
           <div className="row">
@@ -137,6 +137,7 @@ function Jurado() {
         </form>
 
         {/* Tabla de resultados filtrados */}
+        <div className='table-container_'>
         <table className="table table-striped table-bordered table-hover">
           <thead>
             <tr>
@@ -170,6 +171,8 @@ function Jurado() {
             ))}
           </tbody>
         </table>
+        </div>
+        
       </div>
     </Layout>
   );

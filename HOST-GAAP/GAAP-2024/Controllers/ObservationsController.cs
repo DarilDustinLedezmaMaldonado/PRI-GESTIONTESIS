@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using GAAP_2024.Data;
 using GAAP_2024.Models;
 using GAAP_2024.Models.DTO;
+using GAAP_2024.Servicio;
 
 namespace GAAP_2024.Controllers
 {
@@ -16,10 +17,25 @@ namespace GAAP_2024.Controllers
     public class ObservationsController : ControllerBase
     {
         private readonly Gaap2024Context _context;
+        private readonly ProjectService _projectService;
 
-        public ObservationsController(Gaap2024Context context)
+        public ObservationsController(Gaap2024Context context, ProjectService projectService)
         {
             _context = context;
+            _projectService = projectService;
+        }
+
+        [HttpGet("project/{projectId}/stage/{stageNumber}/substage/{substageNumber}")]
+        public IActionResult GetObservations(string projectId, int stageNumber, int substageNumber)
+        {
+            var observations = _projectService.GetObservationsByStageAndSubstage(projectId, stageNumber, substageNumber);
+
+            if (observations == null || !observations.Any())
+            {
+                return NotFound("No observations found for the specified project, stage, and substage.");
+            }
+
+            return Ok(observations);
         }
 
         // GET: api/Observations

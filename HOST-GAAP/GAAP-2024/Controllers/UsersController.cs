@@ -28,6 +28,28 @@ namespace GAAP_2024.Controllers
             return await _context.Users.Where(x => x.Status == 1).ToListAsync();
         }
 
+
+        [HttpPost("Login")]
+        public async Task<ActionResult<string>> Login([FromBody] LoginViewModel loginModel)
+        {
+            // Busca al usuario en la base de datos por nombre de usuario y estado activo
+            var user = await _context.Users
+                .FirstOrDefaultAsync(u => u.UserName == loginModel.UserName && u.Status == 1);
+
+            // Verifica que el usuario existe y la contraseña es correcta
+            if (user == null || user.Password != loginModel.Password)
+            {
+                return Unauthorized("Nombre de usuario o contraseña incorrectos.");
+            }
+
+            // Aquí podrías generar un token JWT si es necesario y retornarlo.
+            return Ok("Login exitoso");
+        }
+
+
+
+
+
         [HttpGet("ByRole/{roleId}")]
         public async Task<ActionResult<List<User>>> GetUsersByRole(int roleId)
         {

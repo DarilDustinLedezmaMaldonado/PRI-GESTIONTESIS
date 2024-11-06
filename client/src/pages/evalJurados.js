@@ -86,7 +86,7 @@ const EvalJurados = () => {
 
   return (
     <Layout>
-      <div className="evaljurados-container container mt-5">
+      <div className="table-container_2">
         <h2>Insertar Observación</h2>
 
         {/* Visualizador de PDF */}

@@ -51,8 +51,8 @@ function ProjectDetails() {
   if (!project) return <div>No se encontró el proyecto</div>;
 
   return (
-    <Layout> {/* Envuelve todo dentro del Layout */}
-      <div className="container mt-5">
+    <Layout> 
+      <div className='table-container_2'>
         <h2 className="text-center mt-4">Detalles del Proyecto</h2>
         <div className="project-details">
           <p><strong>Proyecto:</strong> {project.id}</p>

@@ -95,9 +95,8 @@ const Home = () => {
 
     return (
         <Layout>
-            <div className="evaljurados-container container mt-5">
+            <div>
                 <h2>Crear Proyecto</h2>
-
                 <form onSubmit={handleSubmit}>
                     <div className="row mb-3" style={{ display: 'none' }}> {/* Oculta el campo y su etiqueta */}
                         <div className="col-md-12">

@@ -1,42 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\danie\\Documents\\Proyects\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj": {}
+    "C:\\Users\\daril\\OneDrive\\Documentos\\PROYECTOGTESISUNIDO\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj": {}
   },
   "projects": {
-    "C:\\Users\\danie\\Documents\\Proyects\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj": {
+    "C:\\Users\\daril\\OneDrive\\Documentos\\PROYECTOGTESISUNIDO\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\danie\\Documents\\Proyects\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj",
+        "projectUniqueName": "C:\\Users\\daril\\OneDrive\\Documentos\\PROYECTOGTESISUNIDO\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj",
         "projectName": "GAAP-2024",
-        "projectPath": "C:\\Users\\danie\\Documents\\Proyects\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj",
-        "packagesPath": "C:\\Users\\danie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\danie\\Documents\\Proyects\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\obj\\",
-=======
-    "C:\\Users\\lianl\\OneDrive\\Documentos\\Proyectos\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\lianl\\OneDrive\\Documentos\\Proyectos\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\lianl\\OneDrive\\Documentos\\Proyectos\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj",
-        "projectName": "GAAP-2024",
-        "projectPath": "C:\\Users\\lianl\\OneDrive\\Documentos\\Proyectos\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj",
-        "packagesPath": "C:\\Users\\lianl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lianl\\OneDrive\\Documentos\\Proyectos\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\obj\\",
->>>>>>> LianBranch
+        "projectPath": "C:\\Users\\daril\\OneDrive\\Documentos\\PROYECTOGTESISUNIDO\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\GAAP-2024.csproj",
+        "packagesPath": "C:\\Users\\daril\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daril\\OneDrive\\Documentos\\PROYECTOGTESISUNIDO\\PRI-GESTIONTESIS\\HOST-GAAP\\GAAP-2024\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\danie\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\lianl\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> LianBranch
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\daril\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

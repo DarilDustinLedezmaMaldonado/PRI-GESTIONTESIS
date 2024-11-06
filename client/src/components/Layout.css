@@ -2,6 +2,16 @@ body {
     
     background-color: #E6E6E6;
 }
+.table-container_ {
+    max-height: 320px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+    background-color: white;
+}
+.table-container_2{
+    max-height: 460px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+    background-color: white;
+}
 
 :root {
     --main-radius: 15px;
@@ -79,7 +89,7 @@ nav {
 .bottom-buttons {
     display: flex;
     flex-direction: column;
-    margin-top: 200px; /* Espacio opcional si deseas separar los enlaces de abajo */
+    margin-top: 170px; /* Espacio opcional si deseas separar los enlaces de abajo */
 }
 .icon {
     width: 20px; /* Ajusta el tamaño del icono */

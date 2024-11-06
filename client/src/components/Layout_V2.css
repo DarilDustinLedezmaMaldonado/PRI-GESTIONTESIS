@@ -1,0 +1,35 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    padding: 8px;
+    background-color: #E6E6E6;
+}
+    
+.sidebar {
+    grid-row: span 5 / span 5;
+    background: #860842;
+    border-radius: var(--main-radius);
+}
+
+.navbar {
+    grid-column: span 4 / span 4;
+    background: #860842;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--main-radius);
+}
+
+.page {
+    grid-column: span 4 / span 4;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background: #ffffff;
+    border-radius: var(--main-radius);
+    padding: 20px;
+}
+        

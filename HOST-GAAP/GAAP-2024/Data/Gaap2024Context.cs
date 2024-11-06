@@ -17,6 +17,25 @@ public partial class Gaap2024Context : DbContext
         : base(options)
     {
     }
+
+    //PRUEBA
+    public IEnumerable<Observation> GetObservationsByProjectStageSubstage(string idProject, int stageNumber, int substageNumber)
+    {
+        return Observations
+            .FromSqlRaw(@"
+            SELECT o.* 
+            FROM Observation o
+            JOIN Substage ss ON o.idSubstage = ss.id
+            JOIN Stage s ON ss.idStage = s.Id
+            WHERE s.idProject = @idProject AND s.stageNumber = @stageNumber AND ss.substageNumber = @substageNumber",
+                new SqlParameter("@idProject", idProject),
+                new SqlParameter("@stageNumber", stageNumber),
+                new SqlParameter("@substageNumber", substageNumber))
+            .ToList();
+    }
+
+
+    //FIN PRUEBA
     public async Task<int> ExecuteUspCreateProjectAsync(string projectId, char modality, int registerUser, int esUser, int tuUser)
     {
         var outputParam = new SqlParameter
