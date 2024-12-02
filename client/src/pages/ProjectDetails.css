@@ -1,0 +1,197 @@
+/* General layout for project details page */
+.project-details-container {
+  margin: 30px auto;
+  padding: 25px;
+  background-color: #f9fafc;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Title of the page */
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.project-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Project info details */
+.project-details {
+  margin-bottom: 40px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each project detail */
+.project-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 12px 0;
+  color: #34495e;
+}
+
+.project-info strong {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Buttons styling */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.actions button {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Danger button */
+.actions .btn-danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.actions .btn-danger:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+/* Secondary button */
+.actions .btn-secondary {
+  background-color: #95a5a6;
+  color: #fff;
+}
+
+.actions .btn-secondary:hover {
+  background-color: #7f8c8d;
+  transform: translateY(-2px);
+}
+
+/* Hover effect for buttons */
+.actions button:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling */
+.modal-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal-actions button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-actions .btn-danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.modal-actions .btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.modal-actions .btn-secondary {
+  background-color: #95a5a6;
+  color: #fff;
+}
+
+.modal-actions .btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .project-details-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 1.8rem;
+  }
+
+  .project-info p {
+    font-size: 14px;
+  }
+
+  .actions button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,85 @@
+.ViewJur {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.filter {
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.table-container {
+  width: 100%;
+  height: 600px; /* Limita la altura del contenedor */
+  overflow-y: auto; /* Activa el scroll vertical dentro de la tabla */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #000;
+  color: #fff;
+}
+
+td {
+  background-color: #ddd;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: none;
+  background-color: #fff;
+}
+
+button {
+  background-color: #8b0032;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #a3003d;
+}
+
+.details-button {
+  background-color: #8b0032;
+  max-width: 100px;
+}

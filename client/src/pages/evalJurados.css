@@ -1,0 +1,32 @@
+.evaljurados-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #800040;
+  }
+  
+  .document-viewer {
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #800040;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #a00050;
+  }
+  
+  .disabled-opacity {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
